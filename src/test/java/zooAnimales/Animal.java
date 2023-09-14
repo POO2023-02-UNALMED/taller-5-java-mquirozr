@@ -18,6 +18,14 @@ public class Animal {
         this.zona = zona;
         totalAnimales++;
     }
+    
+    public Animal() {
+        totalAnimales++;
+    }
+    
+    public static int getTotalAnimales() {
+        return totalAnimales;
+    }
 
     public static String totalPorTipo() {
         int mamiferos = Mamifero.cantidadMamiferos();
@@ -52,8 +60,5 @@ public class Animal {
     public String movimiento() {
         return "desplazarse";
     }
-
-    public static int getTotalAnimales() {
-        return totalAnimales;
-    }
+    
 }

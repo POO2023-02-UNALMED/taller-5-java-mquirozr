@@ -43,11 +43,11 @@ public class Zona {
 		this.zoo = zoo;
 	}
 
-	public List<Animal> getAninales() {
+	public List<Animal> getAnimales() {
 		return animales;
 	}
 
-	public void getAninales(List<Animal> animales) {
+	public void getAnimales(List<Animal> animales) {
 		this.animales = animales;
 	}
 

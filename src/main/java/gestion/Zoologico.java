@@ -2,7 +2,7 @@ package gestion;
 
 import java.util.ArrayList;
 import java.util.List;
-import gesrtion.zonas;
+import gestion.zonas;
 
 public class Zoologico {
 	private String nombre;

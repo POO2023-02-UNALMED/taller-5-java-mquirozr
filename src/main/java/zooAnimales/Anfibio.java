@@ -1,6 +1,7 @@
 package zooAnimales;
 
 import gestion.Zona;
+import zooAnimales.Animal;
 
 public class Anfibio extends Animal {
     private static int ranas = 0;

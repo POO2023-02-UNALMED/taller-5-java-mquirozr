@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gestion.Zona;
+import zooAnimales.Animal;
 
 public class Animal {
     private int totalAnimales = 0;

@@ -1,6 +1,7 @@
 package zooAnimales;
 
 import gestion.Zona;
+import zooAnimales.Animal;
 
 public class Ave extends Animal {
 	public static int halcones = 0;

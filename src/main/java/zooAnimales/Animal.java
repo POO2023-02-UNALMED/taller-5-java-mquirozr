@@ -12,7 +12,7 @@ public class Animal {
     private int edad;
     private String habitat;
     private String genero;
-    private List<Zona> zona = new ArrayList<>();
+	private Zona zona;
 
     public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
         this.nombre = nombre;
@@ -47,8 +47,8 @@ public class Animal {
                 " y mi genero es " + genero;
     	
     	String zonaPerfil = 
-    			", la zona en la que me ubico es " + zona.get(0).getNombre() +
-                ", en el " + zona.get(0).getZoo().getNombre();
+    			", la zona en la que me ubico es " + zona.getNombre() +
+                ", en el " + zona.getNombre();
     	
     	String perfilCompleto = (zona!=null)?perfil+zonaPerfil:perfil;
     	

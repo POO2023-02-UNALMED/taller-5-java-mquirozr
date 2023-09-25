@@ -3,8 +3,8 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Reptil extends Animal {
-    private static int iguanas = 0;
-    private static int serpientes = 0;
+	public static int iguanas = 0;
+	public static int serpientes = 0;
     private String colorEscamas;
     private int largoCola;
     private Reptil[] listado; 
@@ -14,39 +14,33 @@ public class Reptil extends Animal {
         this.setColorEscamas(colorEscamas);
         this.setLargoCola(largoCola);
         this.setListado(listado);
-        if (colorEscamas.equals("verde")) {
-            iguanas++;
-        } else if (colorEscamas.equals("blanco")) {
-            serpientes++;
-        }
     }
     
     public Reptil() {
-        super();
-        if (colorEscamas.equals("verde")) {
-            iguanas++;
-        } else if (colorEscamas.equals("blanco")) {
-            serpientes++;
-        }
+    	
     }
     
+    @Override
     public String movimiento() {
         return "reptar";
     }
-
 
     public static int cantidadReptiles() {
         return iguanas + serpientes;
     }
 
-    public static Reptil crearIguana(String nombre, int edad, String habitat, String genero, Zona zona, String otrosValores) {
-        return new Reptil(nombre, edad, habitat, genero, zona, "verde", 3, null);
+    public Reptil crearIguana(String nombre, int edad,  String genero, Zona zona, String otrosValores) {
+    	iguanas++;
+        return new Reptil(nombre, edad, "humedal", genero, zona, "verde", 3, null);
     }
 
-    public static Reptil crearSerpiente(String nombre, int edad, String habitat, String genero, Zona zona, String otrosValores) {
-        return new Reptil(nombre, edad, habitat, genero, zona, "blanco", 1, null);
+    public Reptil crearSerpiente(String nombre, int edad, String genero, Zona zona, String otrosValores) {
+    	serpientes++;
+        return new Reptil(nombre, edad, "jungla", genero, zona, "blanco", 1, null);
     }
 
+    //
+    
 	public Reptil[] getListado() {
 		return listado;
 	}

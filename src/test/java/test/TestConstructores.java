@@ -30,7 +30,7 @@ public class TestConstructores {
 		}
 		assertTrue(ok, "Hay un error en los constructores de la clase Zoologico");
     }
-	
+
 	@Test
    	public void testZona(){
 		

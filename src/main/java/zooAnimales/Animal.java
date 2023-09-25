@@ -19,7 +19,7 @@ public class Animal {
         this.edad = edad;
         this.habitat = habitat;
         this.genero = genero;
-        this.zona.add(zona);
+        this.zona = zona;
         totalAnimales++;
     }
     
@@ -94,11 +94,11 @@ public class Animal {
 		this.genero = genero;
 	}
 
-	public List<Zona> getZona() {
+	public Zona getZona() {
 		return zona;
 	}
 
-	public void setZona(List<Zona> zona) {
+	public void setZona(Zona zona) {
 		this.zona = zona;
 	}
 
